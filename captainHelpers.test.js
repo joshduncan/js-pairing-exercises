@@ -1,27 +1,31 @@
 import * as CaptainHelpers from './captainHelpers';
 
-const captains = [
-  {
-    first: 'Jack',
-    last: 'Sparrow',
-    age: 48
-  },
-  {
-    first: 'Malcolm',
-    last: 'Reynolds',
-    age: 34
-  },
-  {
-    first: 'James',
-    last: 'Kirk',
-    age: 58
-  },
-  {
-    first: 'Han',
-    last: 'Solo',
-    age: 86
-  }
-];
+let captains;
+
+beforeEach(() => {
+  captains = [
+    {
+      first: 'Jack',
+      last: 'Sparrow',
+      age: 48
+    },
+    {
+      first: 'Malcolm',
+      last: 'Reynolds',
+      age: 34
+    },
+    {
+      first: 'James',
+      last: 'Kirk',
+      age: 58
+    },
+    {
+      first: 'Han',
+      last: 'Solo',
+      age: 86
+    }
+  ];
+});
 
 test('returns first names', () => {
   const expectedNames = ['Jack', 'Malcolm', 'James', 'Han'];
