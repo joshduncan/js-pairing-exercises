@@ -7,3 +7,7 @@ export const firstNamesSortedOnlyJs = data => data;
 export const totalAge = data => data;
 
 export const fullNamesByAge = data => data;
+
+export const addShip = (shipName, captains) => undefined;
+
+export const addShipImmutable = (shipName, captain) => undefined;

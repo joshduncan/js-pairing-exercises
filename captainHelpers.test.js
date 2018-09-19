@@ -52,3 +52,22 @@ test('returns captains full names sorted by age ascending', () => {
 
   expect(CaptainHelpers.fullNamesByAge(captains)).toEqual(expectedNames);
 });
+
+test('adds a ship property to a given captain and returns the captain', () => {
+  const captain = CaptainHelpers.addShip('Serenity', captains[1]);
+
+  expect(captain.first).toBe('Malcolm');
+  expect(captain.last).toBe('Reynolds');
+  expect(captain.age).toBe(34);
+  expect(captain).toBe(captains[1]);
+});
+
+test('adds a ship property to a given captain and returns a new captain', () => {
+  const captain = CaptainHelpers.addShipImmutable('Serenity', captains[1]);
+
+  expect(captain.first).toBe('Malcolm');
+  expect(captain.last).toBe('Reynolds');
+  expect(captain.age).toBe(34);
+  expect(captain.ship).toBe('Serenity');
+  expect(captain).not.toBe(captains[1]);
+});
