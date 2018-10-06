@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest --watch"
   },
-  "author": "",
+  "author": "Paul McConnell",
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.26.0",
