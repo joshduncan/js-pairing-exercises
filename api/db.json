@@ -1,0 +1,54 @@
+{
+  "captains": [
+    {
+      "id": "SQ2WI",
+      "first": "Jack",
+      "last": "Sparrow",
+      "age": 48
+    },
+    {
+      "id": "R6TZN",
+      "first": "Malcolm",
+      "last": "Reynolds",
+      "age": 34
+    },
+    {
+      "id": "UXWPK",
+      "first": "Jean Luc",
+      "last": "Picard",
+      "age": 64
+    },
+    {
+      "id": "KZUC8",
+      "first": "Han",
+      "last": "Solo",
+      "age": 33
+    }
+  ],
+  "ships": [
+    {
+      "id": "DRPHT",
+      "name": "USS Enterprise NCC-1701-D",
+      "crewCount": 1012,
+      "propulsion": "Warp Drive"
+    },
+    {
+      "id": "BC13V",
+      "name": "Black Pearl",
+      "crewCount": 44,
+      "propulsion": "Wind"
+    },
+    {
+      "id": "1M6GB",
+      "name": "Millenium Falcon",
+      "crewCount": 2,
+      "propulsion": "Hyperdrive"
+    },
+    {
+      "id": "V7B8T",
+      "name": "Serenity",
+      "crewCount": 5,
+      "propulsion": "Radion/Accelerator Core"
+    }
+  ]
+}
