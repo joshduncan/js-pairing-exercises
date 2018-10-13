@@ -7,6 +7,17 @@
     "test": "jest --watch --verbose",
     "api": "json-server  ./api/db.json"
   },
+  "jest": {
+    "reporters": [
+      "default",
+      [
+        "jest-summary-reporter",
+        {
+          "failuresOnly": false
+        }
+      ]
+    ]
+  },
   "author": "Paul McConnell",
   "license": "MIT",
   "devDependencies": {
@@ -20,6 +31,7 @@
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.11.1",
     "jest": "^23.5.0",
+    "jest-summary-reporter": "0.0.2",
     "prettier": "^1.14.2"
   },
   "dependencies": {
