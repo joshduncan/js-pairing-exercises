@@ -4,25 +4,29 @@
       "id": "SQ2WI",
       "first": "Jack",
       "last": "Sparrow",
-      "age": 48
+      "age": 48,
+      "ship": "BC13V"
     },
     {
       "id": "R6TZN",
       "first": "Malcolm",
       "last": "Reynolds",
-      "age": 34
+      "age": 34,
+      "ship": "V7B8T"
     },
     {
       "id": "UXWPK",
       "first": "Jean Luc",
       "last": "Picard",
-      "age": 64
+      "age": 64,
+      "ship": "DRPHT"
     },
     {
       "id": "KZUC8",
       "first": "Han",
       "last": "Solo",
-      "age": 33
+      "age": 33,
+      "ship": "1M6GB"
     }
   ],
   "ships": [

@@ -1,5 +1,5 @@
-// import * as apiHelpers from './apiHelpers';
-import * as apiHelpers from './solutions/apiHelpersAsync';
+import * as apiHelpers from './apiHelpers';
+// import * as apiHelpers from './solutions/apiHelpersAsync';
 
 test('returns data from captains endpoint', async () => {
   const captains = await apiHelpers.getCaptains();
@@ -52,4 +52,17 @@ xtest('captain full names sorted by age ascending', async () => {
   const fullNamesByAge = await apiHelpers.fullNamesByAge();
 
   expect(fullNamesByAge).toEqual(expectedNames);
+});
+
+xtest('captain and ship combined for given captain id', async () => {
+  const expectedData = {
+    id: 'R6TZN',
+    firstName: 'Malcolm',
+    lastName: 'Reynolds',
+    shipId: 'V7B8T',
+    shipName: 'Serenity'
+  };
+  const captainShipData = await apiHelpers.captainBio('R6TZN');
+
+  expect(captainShipData).toEqual(expectedData);
 });
