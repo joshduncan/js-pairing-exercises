@@ -1,6 +1,6 @@
-// import * as apiHelpers from './apiHelpers';
+import * as apiHelpers from './apiHelpers';
 // import * as apiHelpers from './solutions/apiHelpersPromise';
-import * as apiHelpers from './solutions/apiHelpersAsync';
+// import * as apiHelpers from './solutions/apiHelpersAsync';
 
 test('returns data from captains endpoint', async () => {
   const captains = await apiHelpers.getCaptains();
