@@ -14,28 +14,28 @@ test('returns data from captains endpoint', async () => {
   expect(captains[0]).toEqual(firstCaptain);
 });
 
-test('captain first names', async () => {
+xtest('captain first names', async () => {
   const expectedNames = ['Jack', 'Malcolm', 'Jean Luc', 'Han'];
   const firstNames = await apiHelpers.firstNames();
 
   expect(firstNames).toEqual(expectedNames);
 });
 
-test('captain first names sorted alphabetically', async () => {
+xtest('captain first names sorted alphabetically', async () => {
   const expectedNames = ['Han', 'Jack', 'Jean Luc', 'Malcolm'];
   const firstNamesSorted = await apiHelpers.firstNamesSorted();
 
   expect(firstNamesSorted).toEqual(expectedNames);
 });
 
-test('captain combined total age', async () => {
+xtest('captain combined total age', async () => {
   const expectedTotalAge = 179;
   const totalAge = await apiHelpers.totalAge();
 
   expect(totalAge).toEqual(expectedTotalAge);
 });
 
-test('captain full names sorted by age ascending', async () => {
+xtest('captain full names sorted by age ascending', async () => {
   const expectedNames = [
     'Han Solo',
     'Malcolm Reynolds',
@@ -47,7 +47,7 @@ test('captain full names sorted by age ascending', async () => {
   expect(fullNamesByAge).toEqual(expectedNames);
 });
 
-test('captain and ship combined for given captain id', async () => {
+xtest('captain and ship combined for given captain id', async () => {
   const expectedData = {
     id: 'R6TZN',
     firstName: 'Malcolm',
@@ -63,35 +63,35 @@ test('captain and ship combined for given captain id', async () => {
 xtest('Captains sorted by ship size', async () => {
   const expectedData = [
     {
-      id: "KZUC8",
-      first: "Han",
-      last: "Solo",
+      id: 'KZUC8',
+      first: 'Han',
+      last: 'Solo',
       age: 33,
-      ship: "Millenium Falcon"
+      ship: 'Millenium Falcon'
     },
     {
-      id: "R6TZN",
-      first: "Malcolm",
-      last: "Reynolds",
+      id: 'R6TZN',
+      first: 'Malcolm',
+      last: 'Reynolds',
       age: 34,
-      ship: "Serenity"
+      ship: 'Serenity'
     },
     {
-      id: "SQ2WI",
-      first: "Jack",
-      last: "Sparrow",
+      id: 'SQ2WI',
+      first: 'Jack',
+      last: 'Sparrow',
       age: 48,
-      ship: "Black Pearl"
+      ship: 'Black Pearl'
     },
     {
-      id: "UXWPK",
-      first: "Jean Luc",
-      last: "Picard",
+      id: 'UXWPK',
+      first: 'Jean Luc',
+      last: 'Picard',
       age: 64,
-      ship: "USS Enterprise NCC-1701-D"
+      ship: 'USS Enterprise NCC-1701-D'
     }
-  ]
-  const captainsWithShipNamesBySize = await apiHelpers.captainsWithShipNamesBySize()
+  ];
+  const captainsWithShipNamesBySize = await apiHelpers.captainsWithShipNamesBySize();
 
   expect(captainsWithShipNamesBySize).toEqual(expectedData);
 });
